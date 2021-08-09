@@ -1,11 +1,16 @@
 package com.varitechdevelopment.listinventoryproduct.Activities;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.ViewTreeLifecycleOwner;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.os.Bundle;
+import android.widget.TableLayout;
 
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 import com.varitechdevelopment.listinventoryproduct.Adapter.PageAdapter;
 import com.varitechdevelopment.listinventoryproduct.R;
 
@@ -27,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         pager2.setAdapter(new PageAdapter(getSupportFragmentManager(),getLifecycle(),
                 getResources().getIntArray(R.array.colorPagesViewPager)) {
         });
+        TabLayout tabLayout = findViewById(R.id.activity_main_tabs);
+            new TabLayoutMediator(tabLayout, pager2,
+                    (tab, position) -> tab.setText("CAT " + (position + 1))
+            ).attach();
     }
-
 }

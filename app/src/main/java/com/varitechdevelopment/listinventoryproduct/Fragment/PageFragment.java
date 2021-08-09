@@ -2,6 +2,7 @@ package com.varitechdevelopment.listinventoryproduct.Fragment;
 
 import android.os.Bundle;
 
+
 import androidx.fragment.app.Fragment;
 
 import android.util.Log;
@@ -11,6 +12,8 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 import com.varitechdevelopment.listinventoryproduct.R;
 
 /**

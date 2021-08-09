@@ -27,5 +27,9 @@ public class PageAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position) {
         //Page to return
         return (PageFragment.newInstance(position,this.colors[position]));
+
+    }
+    public CharSequence getPageTitle(int position) {
+        return "OBJECT " + (position + 1);
     }
 }
