@@ -34,8 +34,8 @@ public class Category3Fragment extends Fragment {
     // TODO: Rename and change types and number of parameters
     public static Category3Fragment newInstance() {
         Category3Fragment fragment = new Category3Fragment();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
+        //Bundle args = new Bundle();
+       // fragment.setArguments(args);
         return fragment;
     }
 

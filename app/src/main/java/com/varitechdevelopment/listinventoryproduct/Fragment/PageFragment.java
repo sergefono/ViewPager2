@@ -75,7 +75,7 @@ public class PageFragment extends Fragment {
 
         //Update widgets with it
         rootView.setBackgroundColor(color);
-        textView.setText("Page numéro"+position);
+        textView.setText("Page numéro "+position);
 
         Log.e(getClass().getSimpleName(),"onCreateView called for fragment number"+position);
         return  result;
